@@ -12,22 +12,6 @@ app.use(express.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-
-// app.get('/' , function(req , res){
-
-//     db.all('SELECT * FROM answers' , (err , resut) =>{
-
-//         if (err) res.json({ err: err })
-// else{
-//             res.json({ q: resut })
-// }
-        
-//     })
-   
-
-// })
-
-
 app.use('/auth' , authRoute);
 app.use('/survey' , surveyRoute);
 

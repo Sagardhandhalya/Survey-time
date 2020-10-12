@@ -66,10 +66,6 @@ router.post('/create', checkauth, (req, res) => {
 
 })
 
-
-
-
-
 //  get questions of the specific survey
 
 router.get('/get-questions/:id', checkauth, (req, res) => {
